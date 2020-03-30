@@ -544,9 +544,6 @@ Public Class PrimaryForm
     ''' <summary>
     ''' タブ切り替え時の初期フォーカス位置設定
     ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    ''' <remarks></remarks>
     Private Sub H_Setting_TabIndexChanged(sender As Object, e As EventArgs) Handles BODY.SelectedIndexChanged
         Select Case BODY.SelectedTab.Name
             Case "SelectorTab"
