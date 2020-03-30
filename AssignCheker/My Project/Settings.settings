@@ -1,0 +1,188 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="CSVFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+    <Setting Name="TextFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+    <Setting Name="案件NO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">案件NO</Value>
+    </Setting>
+    <Setting Name="受注NO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">受注NO</Value>
+    </Setting>
+    <Setting Name="枝番" Type="System.String" Scope="User">
+      <Value Profile="(Default)">枝番</Value>
+    </Setting>
+    <Setting Name="得意先コード" Type="System.String" Scope="User">
+      <Value Profile="(Default)">得意先</Value>
+    </Setting>
+    <Setting Name="得意先名" Type="System.String" Scope="User">
+      <Value Profile="(Default)">得意先名</Value>
+    </Setting>
+    <Setting Name="エディション" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ｴﾃﾞｨｼｮﾝ</Value>
+    </Setting>
+    <Setting Name="物件工数" Type="System.String" Scope="User">
+      <Value Profile="(Default)">物件工数</Value>
+    </Setting>
+    <Setting Name="PG工数" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PG工数</Value>
+    </Setting>
+    <Setting Name="開発障害" Type="System.String" Scope="User">
+      <Value Profile="(Default)">開発障害</Value>
+    </Setting>
+    <Setting Name="設計障害" Type="System.String" Scope="User">
+      <Value Profile="(Default)">設計障害</Value>
+    </Setting>
+    <Setting Name="QA件数" Type="System.String" Scope="User">
+      <Value Profile="(Default)">QA件数</Value>
+    </Setting>
+    <Setting Name="仕様書" Type="System.String" Scope="User">
+      <Value Profile="(Default)">仕様書</Value>
+    </Setting>
+    <Setting Name="PG完了" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PG完了</Value>
+    </Setting>
+    <Setting Name="SEテスト" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SEテスト</Value>
+    </Setting>
+    <Setting Name="納品日" Type="System.String" Scope="User">
+      <Value Profile="(Default)">納品日</Value>
+    </Setting>
+    <Setting Name="検収月" Type="System.String" Scope="User">
+      <Value Profile="(Default)">検収月</Value>
+    </Setting>
+    <Setting Name="進捗率" Type="System.String" Scope="User">
+      <Value Profile="(Default)">進捗率</Value>
+    </Setting>
+    <Setting Name="対応残" Type="System.String" Scope="User">
+      <Value Profile="(Default)">対応残</Value>
+    </Setting>
+    <Setting Name="設計主管者名" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SE</Value>
+    </Setting>
+    <Setting Name="開発主管者名" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CR</Value>
+    </Setting>
+    <Setting Name="進捗表更新日" Type="System.String" Scope="User">
+      <Value Profile="(Default)">進捗表更新日</Value>
+    </Setting>
+    <Setting Name="料金表パス" Type="System.String" Scope="User">
+      <Value Profile="(Default)">料金表パス</Value>
+    </Setting>
+    <Setting Name="料金表を開く" Type="System.String" Scope="User">
+      <Value Profile="(Default)">料金表を開く</Value>
+    </Setting>
+    <Setting Name="進捗表パス" Type="System.String" Scope="User">
+      <Value Profile="(Default)">進捗表パス</Value>
+    </Setting>
+    <Setting Name="HiddenColumns" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;枝番&lt;/string&gt;
+  &lt;string&gt;エディション&lt;/string&gt;
+  &lt;string&gt;開発障害&lt;/string&gt;
+  &lt;string&gt;設計障害&lt;/string&gt;
+  &lt;string&gt;QA件数&lt;/string&gt;
+  &lt;string&gt;対応残&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MaxView" Type="System.String" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="TaiKb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="SizeKb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="DefaultFormSizeX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1150</Value>
+    </Setting>
+    <Setting Name="DefaultFormSizeY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">460</Value>
+    </Setting>
+    <Setting Name="UserFormSizeX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1150</Value>
+    </Setting>
+    <Setting Name="UserFormSizeY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">460</Value>
+    </Setting>
+    <Setting Name="ERPNAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="JdnList" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Items" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Batch" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="V2X_CSPROJ" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"&gt;
+  &lt;PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU'"&gt;
+    &lt;StartAction&gt;Program&lt;/StartAction&gt;
+    &lt;StartProgram&gt;{0}\Exec\DebugExecutor.exe&lt;/StartProgram&gt;
+    &lt;StartArguments&gt;/seqoff /-v /Exe {1} /loginid 999999&lt;/StartArguments&gt;
+  &lt;/PropertyGroup&gt;
+&lt;/Project&gt;
+</Value>
+    </Setting>
+    <Setting Name="DefaultStyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Purple</Value>
+    </Setting>
+    <Setting Name="IniFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="VisibleColumns" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;案件NO&lt;/string&gt;
+  &lt;string&gt;受注NO&lt;/string&gt;
+  &lt;string&gt;得意先コード&lt;/string&gt;
+  &lt;string&gt;得意先名&lt;/string&gt;
+  &lt;string&gt;物件工数&lt;/string&gt;
+  &lt;string&gt;PG工数&lt;/string&gt;
+  &lt;string&gt;仕様書&lt;/string&gt;
+  &lt;string&gt;PG完了&lt;/string&gt;
+  &lt;string&gt;SEテスト&lt;/string&gt;
+  &lt;string&gt;納品日&lt;/string&gt;
+  &lt;string&gt;検収月&lt;/string&gt;
+  &lt;string&gt;開発主管者名&lt;/string&gt;
+  &lt;string&gt;設計主管者名&lt;/string&gt;
+  &lt;string&gt;進捗表更新日&lt;/string&gt;
+  &lt;string&gt;料金表パス&lt;/string&gt;
+  &lt;string&gt;料金表を開く&lt;/string&gt;
+  &lt;string&gt;進捗表パス&lt;/string&gt;
+  &lt;string&gt;進捗表を開く &lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="進捗表を開く" Type="System.String" Scope="User">
+      <Value Profile="(Default)">進捗表を開く</Value>
+    </Setting>
+    <Setting Name="EscClose" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="IconVIsible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LastUpdate" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="除外設定" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;DocuworksLibrary&lt;/string&gt;
+  &lt;string&gt;LoadingBase&lt;/string&gt;
+  &lt;string&gt;Resource&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
