@@ -1,0 +1,549 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AssignChecker
+</name>
+</assembly>
+<members>
+<member name="M:AssignChecker.PrimaryForm.FindTancdData">
+	<summary>
+ 事例取得メイン処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_TancdQuery">
+	<summary>
+ 担当者検索取得クエリ作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.TancdGrid_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+	<summary>
+ 色設定
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_CellSettingTancd">
+	<summary>
+ カラム設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenTancdSubform">
+	<summary>
+ サブ画面を開く(開く画面は設定による))
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenTancdSubform_BMN">
+	<summary>
+ サブ画面を開く(開く画面は設定による))
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.TancdGrid_CellDoubleClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ 内訳サブ画面を開く
+ </summary>
+</member><member name="M:AssignChecker.PrimaryForm.OpenTancdGridSubform">
+	<summary>
+ サブ画面を開く(開く画面は設定による))
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.T5_TAIDT_SelectedValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 対象変更時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_SetFormSize">
+	<summary>
+ 
+     ''' フォームのサイズ変更
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.EnableDoubleBuffering(System.Windows.Forms.Control)">
+	<summary>
+ コントロールのDoubleBufferedプロパティをTrueにする
+ </summary>
+	<param name="control">対象のコントロール</param>
+</member><member name="M:AssignChecker.PrimaryForm.OpenSettinfgform">
+	<summary>
+ 設定画面を開く
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenGridInfo">
+	<summary>
+ グリッド情報設定を開く
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FormClose">
+	<summary>
+ 画面終了処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.Sub1ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ 工数内訳画面を開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.内訳対応残ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ 対応残画面を開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.D_DataGridView_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ DataGridView,H_Setting
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.H_Setting_TabIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ タブ切り替え時の初期フォーカス位置設定
+ </summary>
+</member><member name="T:AssignChecker.HotKey">
+	<summary>ホットキーの登録・解除を行うためのクラス</summary>
+</member><member name="M:AssignChecker.PrimaryForm.UpdateCostDataView">
+	<summary>
+ アサイン取得メイン処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_CreateCostQuery">
+	<summary>
+ アサイン情報取得クエリ作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_CostCellSetting">
+	<summary>
+ [原価情報]カラム設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.CostTab_Enter(System.Object,System.EventArgs)">
+	<summary>
+ 原価情報カーソル移動（KeyDown）
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.値をコピー_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] コピー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.値をヘッダ付きでコピー_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] 値をヘッダ付きでコピーする
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.CostGridView_CellMouseDown(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ [CellMouseDown]クリック時にセルを選択状態にする
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.CostGridView_CellMouseUp(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ [CellMouseUp]右クリック時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.CosteGrid_CellDoubleClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ 内訳サブ画面を開く
+ </summary>
+</member><member name="M:AssignChecker.PrimaryForm.OpenCostGridSubform">
+	<summary>
+ サブ画面を開く(開く画面は設定による))
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AssignChecker.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.AO_blue">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.AOMain">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.blank">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.FOLDER">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.IcoDocument">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.IcoExcel">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_AO_48">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_blue">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_green">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_lime">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_orange">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_purple">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_purple1">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.icon_silver">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.IcoNew">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.IcoNew1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.loading1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.selectorimage1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:AssignChecker.My.Resources.Resources.svn">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:AssignChecker.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:AssignChecker.PrimaryForm.進捗表を更新ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ 進捗表更新実行
+ </summary>
+</member><member name="M:AssignChecker.PrimaryForm.UpdateDataView">
+	<summary>
+ アサイン取得メイン処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_CreateQuery">
+	<summary>
+ アサイン情報取得クエリ作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_AddWHERE2(System.String@)">
+	<summary>
+ 事例検索Whrere句作成
+ </summary>
+	<param name="L_SQL"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.CreateWhere(System.Int32)">
+	<summary>
+ アサイン情報取得Where句作成
+ </summary>
+	<param name="idx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.ShowAKBS1010">
+	<summary>
+ 基本案件情報を開く
+ </summary>
+	<remarks></remarks>
+</member><member name="T:AssignChecker.PrimaryForm.EXEMGR">
+	<summary>
+ 負荷アサインシステム管理クラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_CellSetting">
+	<summary>
+ [アサイン情報]カラム設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.UpdateExcel(System.String,System.String)">
+	<summary>
+ 進捗表パス登録処理
+ </summary>
+	<param name="Denno"></param>
+	<param name="val"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenSubformKousu">
+	<summary>
+ 工数割振りサブ画面を開く
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenSubformTaiou">
+	<summary>
+ 対応内訳サブ画面を開く
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenSubformPGList">
+	<summary>
+ プログラム一覧サブ画面を開く
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenSubformCost">
+	<summary>
+ 原価内訳サブ画面を開く
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.原価内訳ToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+	<summary>
+ 原価内訳サブ画面を開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.OpenSubform">
+	<summary>
+ サブ画面を開く(開く画面は設定による))
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.TAB1_SetFocusEvent(System.Object,System.EventArgs)">
+	<summary>
+ アサイン情報カーソル移動（KeyDown）
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.H_Order_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 並び順変更時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.Button4_Click_1(System.Object,System.EventArgs)">
+	<summary>
+ 今月仕様書一覧取得
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.Button3_Click(System.Object,System.EventArgs)">
+	<summary>
+ 仕掛一覧取得
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.仕様書提出前アサイン_Click(System.Object,System.EventArgs)">
+	<summary>
+ 仕掛一覧取得
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.条件クリア_Click(System.Object,System.EventArgs)">
+	<summary>
+ 条件をクリア
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.コピーToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] コピー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.値をヘッダ付きでコピーToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] 値をヘッダ付きでコピーする
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.進捗表を登録ToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] 進捗表を登録
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.登録を解除ToolStripMenuItem2_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] 登録を解除
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.料金表のパスを開くToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] 進捗表を開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.進捗表を開くToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] 進捗表を開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.進捗表フォルダを開くToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] フォルダを開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.案件情報入力を開くToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ [右クリック] 基本案件情報を開くボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.D_DataGridView_CellDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ ダブルクリック(サブ画面を開く)
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.D_DataGridView_CellMouseDown(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ [CellMouseDown]クリック時にセルを選択状態にする
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.D_DataGridView_CellMouseUp(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ [CellMouseUp]右クリック時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.D_DataGridView_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ 料金表を開くボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_PGLogQuery">
+	<summary>
+ 事例検索取得クエリ作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.FN_CellSettingPG">
+	<summary>
+ [事例検索]カラム設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.TAB3_SetFocusEvent(System.Object,System.EventArgs)">
+	<summary>
+ 事例検索カーソル移動（KeyDown）
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.IniView_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+	<summary>
+ Inilistクリック時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.Filter_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>  FILTER キー押下イベント  </summary>
+</member><member name="M:AssignChecker.PrimaryForm.IniView_DoubleClick(System.Object,System.EventArgs)">
+	<summary>  ダブルクリック</summary>
+</member><member name="M:AssignChecker.PrimaryForm.SaveButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Saveボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.iniView_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ KeyDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AssignChecker.PrimaryForm.Exec">
+	<summary>  メニュー起動  </summary>
+</member><member name="M:AssignChecker.PrimaryForm.SaveIni">
+	<summary>  INIファイルの保存  </summary>
+</member><member name="M:AssignChecker.PrimaryForm.GetIniList">
+	<summary>  INIリストの取得  </summary>
+</member><member name="M:AssignChecker.PrimaryForm.OpenIniFile">
+	<summary>  iniファイルを開きます  </summary>
+</member><member name="M:AssignChecker.PrimaryForm.IniCopy(System.Boolean)">
+	<summary>  INIリストの取得  </summary>
+</member><member name="M:AssignChecker.PrimaryForm.DbIniCopy(System.Boolean)">
+	<summary>  INIリストの取得  </summary>
+</member><member name="M:AssignChecker.PrimaryForm.DeleteIni">
+	<summary>  INIファイルの削除 </summary>
+</member><member name="M:AssignChecker.PrimaryForm.CopyIni">
+	<summary>  INIファイルの複製 </summary>
+</member><member name="M:AssignChecker.PrimaryForm.FNC_Click(System.Object,System.EventArgs)">
+	<summary>
+ INIのファンクションクリック
+ </summary>
+</member><member name="M:AssignChecker.PrimaryForm.ShowPRGList">
+	<summary>  PRGフォルダを表示 </summary>
+</member><member name="M:AssignChecker.PrimaryForm.ShowPRGListMain">
+	<summary>  販売フォルダからini一覧を取得します  </summary>
+</member><member name="F:AssignChecker.PrimaryForm.IniList">
+	<summary>  iniファイルの一覧</summary>
+</member><member name="F:AssignChecker.PrimaryForm.PRGList">
+	<summary>  iniファイルの一覧</summary>
+</member><member name="F:AssignChecker.PrimaryForm.CurrentIniinfo">
+	<summary>  選択中のini情報</summary>
+</member><member name="F:AssignChecker.PrimaryForm.NameEdit">
+	<summary>  ini名編集中フラグ </summary>
+</member><member name="M:AssignChecker.PrimaryForm.RegistrFormIni">
+	<summary>  画面起動時処理</summary>
+</member><member name="M:AssignChecker.PrimaryForm.ShowIniList">
+	<summary>  販売フォルダからini一覧を取得します  </summary>
+</member>
+</members>
+</doc>

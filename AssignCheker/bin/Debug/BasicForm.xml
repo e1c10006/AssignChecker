@@ -1,0 +1,1559 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BasicForm
+</name>
+</assembly>
+<members>
+<member name="P:ILL.ERF.G1Base.DLGTBL.DataTable">
+	<summary>
+ 表示するデータ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTBL.DLGTBL_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ KeyDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTBL.DLGTBL_Load(System.Object,System.EventArgs)">
+	<summary>
+ ロード時イベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.G1Base.DLGTBL">
+	<summary>
+ 計上Shelf表示用ダイアログ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String)">
+	<summary>
+ 指定したテキストを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String)">
+	<summary>
+ 指定したオブジェクトの前に、指定したテキストを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="owner"></param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定することで、
+ ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。メッセージ ボック
+ スはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、そのモーダル フ
+ ォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行うためには、通常
+ はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があります。
+ 
+ 既定では、メッセージ ボックスには [OK] ボタンが表示されます。メッセージ ボックスのタイトルにキャプション
+ は表示されません。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String)">
+	<summary>
+ 指定したテキストとキャプションを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ 既定では、メッセージ ボックスには [OK] ボタンが表示されます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String)">
+	<summary>
+ 指定したオブジェクトの前に、指定したテキストとキャプションを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定することで、
+ ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。メッセージ ボック
+ スはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、そのモーダル フ
+ ォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行うためには、通常
+ はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があります。
+ 
+ 既定では、メッセージ ボックスには [OK] ボタンが表示されます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons)">
+	<summary>
+ 指定したテキスト、キャプション、およびボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons)">
+	<summary>
+ 指定したオブジェクトの前に、指定したテキスト、キャプション、およびボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定することで、
+ ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。メッセージ ボック
+ スはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、そのモーダル フ
+ ォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行うためには、通常
+ はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があります。
+ 
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、およびアイコンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)">
+	<summary>
+	</summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定することで、
+ ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。メッセージ ボック
+ スはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、そのモーダル フ
+ ォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行うためには、通
+ 常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があります。
+ 
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、および既定のボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+	<summary>
+	</summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定することで、
+ ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。メッセージ ボック
+ スはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、そのモーダル フ
+ ォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行うためには、通常
+ はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があります。
+ 
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、およびオプションを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions)">
+	<summary>
+	</summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定することで、
+ ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。メッセージ ボック
+ スはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、そのモーダル フ
+ ォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行うためには、通常
+ はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があります。
+
+ メッセージ ボックスには、最大 3 つのボタンを配置できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および [ヘルプ] ボタンを
+ 表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="displayHelpButton"></param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、メッセージ ボックスを所有するフォーム (アクティブなフォーム
+ ) が HelpRequested イベントを受け取ります。カスタムのヘルプ アクションを実行するには、この HelpRequested 
+ イベントを処理します。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および指定したヘルプ ファイ
+ ルを使用する [ヘルプ] ボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ
+ ます。メッセージ ボックスを所有するフォーム (つまりアクティブなフォーム) も、HelpRequested イベントを受
+ け取ります。
+
+ helpFilePath パラメータは、C:\path\sample.chm または /folder/file.htm の形式で指定できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および指定したヘルプ ファイ
+ ルを使用する [ヘルプ] ボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定するこ
+ とで、ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ
+ ます。メッセージ ボックスを所有するフォーム (つまりアクティブなフォーム) も、HelpRequested イベントを受
+ け取ります。
+ 
+ helpFilePath パラメータは、C:\path\sample.chm または /folder/file.htm の形式で指定できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および指定したヘルプ ファイ
+ ルと HelpNavigator を使用する [ヘルプ] ボタンを表示するメッセージ ボックスを表示します 
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<param name="navigator">HelpNavigator 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ、
+ navigator パラメータで識別されるヘルプの内容が表示されます。メッセージ ボックスを所有するフォーム (つま
+ りアクティブなフォーム) も、HelpRequested イベントを受け取ります。
+ 
+ コンパイル済みヘルプ ファイルでは、目次、索引、検索、ページ内のキーワードのリンクなどの各機能が利用でき
+ ます。navigator に対して、TableOfContents、Find、Index、または Topic の値が使用できます。
+ 
+ helpFilePath パラメータは、C:\path\sample.chm または /folder/file.htm の形式で指定できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および指定したヘルプ ファイ
+ ルと HelpNavigator を使用する [ヘルプ] ボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<param name="navigator">HelpNavigator 値の 1 つ</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定するこ
+ とで、ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ、
+ navigator パラメータで識別されるヘルプの内容が表示されます。メッセージ ボックスを所有するフォーム (つま
+ りアクティブなフォーム) も、HelpRequested イベントを受け取ります。
+ 
+ コンパイル済みヘルプ ファイルでは、目次、索引、検索、ページ内のキーワードのリンクなどの各機能が利用でき
+ ます。navigator に対して、TableOfContents、Find、Index、または Topic の値が使用できます。
+ 
+ helpFilePath パラメータは、C:\path\sample.chm または /folder/file.htm の形式で指定できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.String)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および指定したヘルプ ファイ
+ ルとヘルプ キーワードを使用する [ヘルプ] ボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<param name="keyword">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ キーワード</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ、
+ keyword パラメータで識別されるヘルプ キーワード トピックが表示されます。メッセージ ボックスを所有するフ
+ ォーム (つまりアクティブなフォーム) も、HelpRequested イベントを受け取ります。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.String)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および指定したヘルプ ファイ
+ ルとヘルプ キーワードを使用する [ヘルプ] ボタンを表示するメッセージ ボックスを表示します
+ </summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<param name="keyword">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ キーワード</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定するこ
+ とで、ダイアログ ボックスの最上位のオーナーとして機能させることができます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ、
+ keyword パラメータで識別されるヘルプ キーワード トピックが表示されます。メッセージ ボックスを所有するフ
+ ォーム (つまりアクティブなフォーム) も、HelpRequested イベントを受け取ります。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Object)">
+	<summary>
+ 指定したテキスト、キャプション、ボタン、アイコン、既定のボタン、オプション、および指定したヘルプ ファイ
+ ル、HelpNavigator、およびヘルプ トピックを使用する [ヘルプ] ボタンを表示するメッセージ ボックスを表示し
+ ます
+ </summary>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<param name="navigator">HelpNavigator 値の 1 つ</param>
+	<param name="param">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ トピックの数値 ID</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ、
+ navigator パラメータで識別されるヘルプの内容が表示されます。メッセージ ボックスを所有するフォーム (つま
+ りアクティブなフォーム) も、HelpRequested イベントを受け取ります。
+ 
+ コンパイル済みヘルプ ファイルでは、目次、索引、検索、ページ内のキーワードのリンクなどの各機能が利用でき
+ ます。navigator に対して、TableOfContents、Find、Index、または Topic の値が使用できます。
+ 
+ param を使用すると、Topic コマンドをさらに細かく設定できます。navigator パラメータで指定される値が 
+ TableOfContents、Index、または Find の場合、この値は null 参照 (Visual Basic では Nothing) である必要が
+ あります。navigator パラメータが Topic を参照している場合、この値は表示するトピックの数値を格納している
+ オブジェクトを参照します。
+ 
+ helpFilePath パラメータは、C:\path\sample.chm または /folder/file.htm の形式で指定できます。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.MSGBOX.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Object)">
+	<summary>
+	</summary>
+	<param name="owner">モーダル ダイアログ ボックスを所有する IWin32Window の実装</param>
+	<param name="text">メッセージ ボックスに表示するテキスト</param>
+	<param name="caption">メッセージ ボックスのタイトル バーに表示するテキスト</param>
+	<param name="buttons">メッセージ ボックスに表示されるボタンを指定する MessageBoxButtons 値の 1 つ</param>
+	<param name="icon">メッセージ ボックスに表示されるアイコンを指定する MessageBoxIcon 値の 1 つ</param>
+	<param name="defaultButton">メッセージ ボックスの既定のボタンを指定する MessageBoxDefaultButton 値の 1 つ</param>
+	<param name="options">
+ メッセージ ボックスで使用する表示オプションと関連付けオプションを指定する MessageBoxOptions 値の 1 つ
+ 既定値を使用する場合は、0 を渡します
+ </param>
+	<param name="helpFilePath">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ ファイルのパスと名前</param>
+	<param name="navigator">HelpNavigator 値の 1 つ</param>
+	<param name="param">ユーザーが [ヘルプ] ボタンをクリックしたときに表示されるヘルプ トピックの数値 ID</param>
+	<returns>DialogResult 値の 1 つ</returns>
+	<remarks>
+ メッセージ ボックスはモーダル ダイアログ ボックスです。つまり、キーボードやマウスのクリックによる入力は、
+ そのモーダル フォーム上のオブジェクトに対してのみ発生します。プログラムで別のフォームに対する入力を行う
+ ためには、通常はユーザーの操作に応答する形で、事前にモーダル フォームを非表示にするか、閉じる必要があり
+ ます。owner パラメータを使用して、IWin32Window インターフェイスを実装する特定のオブジェクトを指定するこ
+ とで、ダイアログ ボックスの最上位のウィンドウおよびオーナーとして機能させることができます。
+ 
+ ユーザーが [ヘルプ] ボタンをクリックすると、helpFilePath パラメータで指定されたヘルプ ファイルが開かれ、
+ navigator パラメータで識別されるヘルプの内容が表示されます。メッセージ ボックスを所有するフォーム (つま
+ りアクティブなフォーム) も、HelpRequested イベントを受け取ります。
+ 
+ コンパイル済みヘルプ ファイルでは、目次、索引、検索、ページ内のキーワードのリンクなどの各機能が利用でき
+ ます。navigator に対して、TableOfContents、Find、Index、または Topic の値が使用できます。
+ 
+ param を使用すると、Topic コマンドをさらに細かく設定できます。navigator パラメータで指定される値が 
+ TableOfContents、Index、または Find の場合、この値は null 参照 (Visual Basic では Nothing) である必要が
+ あります。navigator パラメータが Topic を参照している場合、この値は表示するトピックの数値を格納している
+ オブジェクトを参照します。
+ 
+ helpFilePath パラメータは、C:\path\sample.chm または /folder/file.htm の形式で指定できます。
+ </remarks>
+</member><member name="T:ILL.ERF.G1Base.MSGBOX">
+	<summary>メッセージボックスのラッパークラス</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_InitCheckSecurity">
+	<summary>起動時のセキュリティチェックは行わない</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_SetFunction">
+	<summary>ファンクション登録</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_SetLabelTexts">
+	<summary>項目名表示</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_AssignServant">
+	<summary>Servant登録</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_SetInitialValues">
+	<summary>項目の値表示</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_Cancel">
+	<summary>ｷｬﾝｾﾙ</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_End">
+	<summary>終了処理</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.DLGEXT_Activated(System.Object,System.EventArgs)">
+	<summary>
+ フォームを開いた時には必ず先頭項目に止まるように
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.DLGREF_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ FormClosing時イベント
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.DLGEXT_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ KeyDown時イベント
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.G1_EVENT_ReachEnd(System.Object,System.EventArgs)">
+	<summary>
+ 最後まで到達すると終了処理へ
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.DLGEXT.FN_CheckInput(System.String@,System.Windows.Forms.Control@)">
+	<summary>入力チェック</summary>
+	<param name="Err">失敗した場合のエラーメッセージ（戻り値）</param>
+</member><member name="P:ILL.ERF.G1Base.DLGEXT.ExItemNames">
+	<summary>拡張項目の項目名コレクション</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGEXT.ExValues">
+	<summary>拡張項目の値コレクション</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGEXT.ExControls">
+	<summary>拡張項目コントロールコレクション</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGEXT.LabelsColor">
+	<summary>ラベル色</summary>
+</member><member name="T:ILL.ERF.G1Base.DLGEXT">
+	<summary>拡張項目用ダイアログ</summary>
+</member><member name="T:ILL.ERF.G1Base.DLGREF.ReferenceItem">
+	<summary>
+ 参照ボタンの一単位
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.G1Base.DLGREF.ReferenceCollection">
+	<summary>参照のコレクション</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGREF.DialogTitle">
+	<summary>ダイアログのタイトル</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGREF.INI">
+	<summary>INI情報オブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGREF.USJ">
+	<summary>ユーザー情報オブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGREF.DATA">
+	<summary>DBへの接続オブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGREF.SYS">
+	<summary>EXE管理オブジェクト</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.DLGREF_Load(System.Object,System.EventArgs)">
+	<summary>ロード時イベント</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.DLGREF_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ KeyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+	<summary>F10でコントロールボックスが開くのを回避</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.Buttons_Click(System.Object,System.EventArgs)">
+	<summary>
+ 各ボタンのクリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.PNL_Buttons_Resize(System.Object,System.EventArgs)">
+	<summary>
+ ボタンパネルのリサイズ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.BTN_END_Click(System.Object,System.EventArgs)">
+	<summary>
+ 終了ボタンクリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.FN_Exec(ILL.ERF.G1Base.DLGREF.ReferenceItem)">
+	<summary>実行</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.FN_End">
+	<summary>終了</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.FN_SetColor">
+	<summary>色の設定</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.FN_SetSelectedIndex(System.Int32)">
+	<summary>選択状態のセット</summary>
+	<param name="Val">移動数</param>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.SetReferenceItem(ILL.ERF.BaseLib.IDTMGR,ILL.ERF.G1Base.DLGREF,System.String,System.Boolean)">
+	<summary>
+ 参照ボタン設定のヘルパーメソッド（受け渡し値なし）    
+ </summary>
+	<param name="ArgDlg">参照用ダイアログ</param>
+	<param name="ArgAsmName">アセンブリ名</param>
+	<param name="ArgEnabled">ボタン利用フラグ</param>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.SetReferenceItem(ILL.ERF.BaseLib.IDTMGR,ILL.ERF.G1Base.DLGREF,System.String,ILL.ERF.BaseLib.CTLTXT,System.Boolean)">
+	<summary>
+ 参照ボタン設定のヘルパーメソッド（受け渡し値あり）    
+ </summary>
+	<param name="ArgDlg">参照用ダイアログ</param>
+	<param name="ArgAsmName">アセンブリ名</param>
+	<param name="ArgEnabled">ボタン利用フラグ</param>
+	<param name="ArgText">受け渡し値</param>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.SetReferenceItem(ILL.ERF.BaseLib.IDTMGR,ILL.ERF.G1Base.DLGREF,System.String,System.String,System.Boolean)">
+	<summary>
+ 参照ボタン設定のヘルパーメソッド（受け渡し値あり）    
+ </summary>
+	<param name="ArgAsmName">アセンブリ名</param>
+	<param name="ArgDlg">参照用ダイアログ</param>
+	<param name="ArgEnabled">ボタン利用フラグ</param>
+	<param name="ArgInitialText">受け渡し値</param>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.SetReferenceItem(ILL.ERF.BaseLib.IDTMGR,ILL.ERF.G1Base.DLGREF,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+	<summary>
+ 参照ボタン設定のヘルパーメソッド（受け渡し値あり + 起動引数あり + セキュリティチェックあり）    
+ </summary>
+	<param name="ArgAsmName">アセンブリ名</param>
+	<param name="ArgDlg">参照用ダイアログ</param>
+	<param name="ArgEnabled">ボタン利用フラグ</param>
+	<param name="ArgInitialText">受け渡し値</param>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.SetReferenceItem(ILL.ERF.BaseLib.IDTMGR,ILL.ERF.G1Base.DLGREF,System.String,System.Object,System.Boolean)">
+	<summary>
+ 参照ボタン設定のヘルパーメソッド（受け渡し値あり）    
+ </summary>
+	<param name="ArgAsmName">アセンブリ名</param>
+	<param name="ArgDlg">参照用ダイアログ</param>
+	<param name="ArgEnabled">ボタン利用フラグ</param>
+	<param name="ArgObject">受け渡し値</param>
+</member><member name="M:ILL.ERF.G1Base.DLGREF.SetReferenceItem(ILL.ERF.BaseLib.IDTMGR,ILL.ERF.G1Base.DLGREF,System.String,System.Object,System.Boolean,System.String,System.String,System.String,System.String)">
+	<summary>
+ 参照ボタン設定のヘルパーメソッド（受け渡し値あり + 起動引数あり）    
+ </summary>
+	<param name="ArgAsmName">アセンブリ名</param>
+	<param name="ArgDlg">参照用ダイアログ</param>
+	<param name="ArgEnabled">ボタン利用フラグ</param>
+	<param name="ArgObject">受け渡し値</param>
+</member><member name="T:ILL.ERF.G1Base.DLGREF">
+	<summary>参照ダイアログ</summary>
+</member><member name="P:ILL.ERF.G1Base.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:ILL.ERF.G1Base.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:ILL.ERF.G1Base.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.AsmName">
+	<summary>アセンブリ名</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.ClassName">
+	<summary>クラス名</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.Form">
+	<summary>フォーム</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.FormCheck">
+	<summary>メニューマスタからのFORMCHK</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.Param1">
+	<summary>メニューマスタからの引数1</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.Param2">
+	<summary>メニューマスタからの引数2</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.Param3">
+	<summary>メニューマスタからの引数3</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.ParentForm">
+	<summary>親フォーム</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.Thread">
+	<summary>フォームの属するスレッド</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.ReturnObject">
+	<summary>戻り値</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.ReturnFlag">
+	<summary>戻り値を取得したタイミングを制御するためのフラグ</summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.WaitFlag">
+	<summary>
+ スレッドが戻り値を待って待機しているのか、
+ 止まってしまっているのかを判別するためのフラグ
+ </summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.DialogFlag">
+	<summary>
+ ダイアログとして呼び出すか、
+ 通常のフォームとして呼び出すか
+ </summary>
+</member><member name="F:ILL.ERF.G1Base.SYSMGR.FormItem.Starting">
+	<summary>
+ 不要なGarbageが起こってしまうのを防ぐためのフラグ
+ </summary>
+</member><member name="T:ILL.ERF.G1Base.SYSMGR.FormItem">
+	<summary>EXE情報</summary>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.SetForegroundWindow(System.IntPtr)">
+	<summary>SetForegroundWindow</summary>
+</member><member name="P:ILL.ERF.G1Base.SYSMGR.FormCollection">
+	<summary>EXE情報のコレクション</summary>
+</member><member name="P:ILL.ERF.G1Base.SYSMGR.INI">
+	<summary>INIオブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.SYSMGR.PrimaryForm">
+	<summary>始めに呼び出すフォーム</summary>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowPrimaryForm(System.String,System.String)">
+	<summary>初期画面の表示</summary>
+	<param name="AsmName">アセンブリ名</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowPrimaryForm(System.String,System.String,System.Object)">
+	<summary>初期画面の表示</summary>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="InitialValue">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowForm(System.String,ILL.ERF.G1Base.BasicForm,System.String,System.String,System.String,System.Object,System.Boolean,System.String,System.String,System.String,System.String)">
+	<summary>フォーム表示 本体</summary>
+	<param name="Path">exeファイルのパス</param>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="ClassName">クラス名</param>
+	<param name="InitialValue">Formに渡す初期値</param>
+	<param name="Param1">メニューマスタの引数1</param>
+	<param name="Param2">メニューマスタの引数2</param>
+	<param name="Param3">メニューマスタの引数3</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowForm(System.String,ILL.ERF.G1Base.BasicForm,System.String,System.String,System.String,System.Object,System.Boolean)">
+	<summary>フォーム表示 本体</summary>
+	<param name="Path">exeファイルのパス</param>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="ClassName">クラス名</param>
+	<param name="InitialValue">Formに渡す初期値</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowForm(ILL.ERF.G1Base.BasicForm,System.String,System.String,System.String,System.Object)">
+	<summary>フォーム表示</summary>
+	<param name="ParentForm">親フォーム</param>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="ClassName">クラス名</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowForm(ILL.ERF.G1Base.BasicForm,System.String,System.String,System.Object)">
+	<summary>フォーム表示</summary>
+	<param name="ParentForm">親フォーム</param>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowForm(ILL.ERF.G1Base.BasicForm,System.String,System.String)">
+	<summary>フォーム表示</summary>
+	<param name="ParentForm">親フォーム</param>
+	<param name="AsmName">アセンブリ名</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowForm(ILL.ERF.G1Base.BasicForm,System.String,System.String,System.Object,System.String,System.String,System.String,System.String)">
+	<summary>フォーム表示(パラメータ指定)</summary>
+	<param name="ParentForm">親フォーム</param>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+	<param name="Param1">メニューマスタの引数1</param>
+	<param name="Param2">メニューマスタの引数2</param>
+	<param name="Param3">メニューマスタの引数3</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowDialog(ILL.ERF.G1Base.BasicForm,System.String,System.String,System.String,System.Object)">
+	<summary>ダイアログ表示</summary>
+	<param name="ParentForm">親フォーム</param>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="ClassName">クラス名</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowDialog(ILL.ERF.G1Base.BasicForm,System.String,System.String,System.Object)">
+	<summary>ダイアログ表示</summary>
+	<param name="ParentForm">親フォーム</param>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowDialog(ILL.ERF.G1Base.BasicForm,System.String,System.String)">
+	<summary>ダイアログ表示</summary>
+	<param name="ParentForm">親フォーム</param>
+	<param name="AsmName">アセンブリ名</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.BeginThread">
+	<summary>スレッド開始</summary>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.CloseForm(ILL.ERF.G1Base.BasicForm)">
+	<summary>終了</summary>
+	<param name="objForm">対象のFormオブジェクト</param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.CloseForm(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>終了</summary>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="ClassName">クラス名</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.CloseFormMain(ILL.ERF.G1Base.SYSMGR.FormItem)">
+	<summary>終了メイン</summary>
+	<param name="FrmItm">対象のFormオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.CloseChildForm(ILL.ERF.G1Base.SYSMGR.FormItem)">
+	<summary>親子関係にあるフォームを消去する</summary>
+	<param name="FrmItm">対象のFormオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.GetForm(ILL.ERF.G1Base.BasicForm)">
+	<summary>既に起動しているForm取得</summary>
+	<param name="objForm">取得するForm</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.GetForm(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>既に起動しているForm取得</summary>
+	<param name="AsmName">アセンブリ名</param>
+	<param name="ClassName">クラス名</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.SetValue(ILL.ERF.G1Base.BasicForm,System.Object)">
+	<summary>既に開いているフォームに値を渡す</summary>
+	<param name="objForm">対象のフォーム</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.SetValue(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<summary>既に開いているフォームに値を渡す</summary>
+	<param name="AsmName">対象のフォームのアセンブリ名</param>
+	<param name="ClassName">対象のフォームのクラス名</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.Garbage">
+	<summary>死んでいるスレッドの整理</summary>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ActivateChildForm(ILL.ERF.G1Base.BasicForm)">
+	<summary>
+ 子フォームをアクティブにする
+ </summary>
+	<param name="Form">親のフォーム</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.EnumThread(System.IntPtr,System.IntPtr)">
+	<summary>
+ EnumThreadWindows のコールバックルーチン
+ </summary>
+	<param name="Handle"></param>
+	<param name="Parameter"></param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ActivateForm(ILL.ERF.G1Base.BasicForm)">
+	<summary>
+ 別スレッドをアクティブにするためのプロシージャ
+ （デッドロック回避）
+ </summary>
+	<param name="Form">対象のフォーム</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ActivateForm(ILL.ERF.G1Base.BasicForm,System.Object)">
+	<summary>
+ 別スレッドをアクティブにするためのプロシージャ
+ （デッドロック回避）
+ </summary>
+	<param name="Form">対象のフォーム</param>
+	<param name="Result">ShowFormの戻り値</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.DisposeForm(ILL.ERF.G1Base.BasicForm)">
+	<summary>
+ 別スレッドを破棄にするためのプロシージャ
+ （デッドロック回避）
+ </summary>
+	<param name="Form">対象のフォーム</param>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowChild(ILL.ERF.G1Base.BasicForm,ILL.ERF.G1Base.BasicForm,System.Boolean)">
+	<summary>
+ 別スレッドで子ダイアログを表示するプロシージャ
+ （デッドロック回避）
+ </summary>
+	<param name="ParentForm">対象の親フォーム</param>
+	<param name="Child">対象の子フォーム</param>
+	<param name="DialogFlag">ダイアログとして開くか</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.SetValueEx(ILL.ERF.G1Base.BasicForm,System.Object)">
+	<summary>
+ 別スレッドのフォームに値を渡すプロシージャ
+ （デッドロック回避）
+ </summary>
+	<param name="objForm">対象のフォーム</param>
+	<param name="Value">引き渡すデータオブジェクト</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.CreatePrimaryForm">
+	<summary>フォーム取得</summary>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.GetInitialValue">
+	<summary>パラメータ取得</summary>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.OnThreadException(System.Object,System.Threading.ThreadExceptionEventArgs)">
+	<summary>
+ スレッド例外イベントハンドラ
+ </summary>
+	<param name="sender"></param>
+	<param name="t"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.SYSMGR.ShowThreadExceptionDialog(System.Exception)">
+	<summary>
+ 診断メッセージ表示
+ </summary>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.G1Base.SYSMGR">
+	<summary>
+ プログラム管理クラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGSRY.#ctor(System.String)">
+	<summary>
+ コンストラクタ
+ </summary>
+	<param name="traceMessage"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGSRY.DetailButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ 詳細ボタン押下時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGSRY.FN_ChangeSize">
+	<summary>
+ 画面サイズ変更処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGSRY.DLGSRY_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォームロード時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.G1Base.DLGSRY">
+	<summary>
+ 遺憾の意表明クラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.CheckButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ 描画時
+ </summary>
+	<param name="pevent"></param>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.G1Base.CheckButton">
+	<summary>
+ カスタムボタンクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.G1Base.DLGTAG.TAGS">
+	<summary>
+ 付箋管理オブジェクト
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.G1Base.DLGTAG.TAGCD">
+	<summary>
+ 付箋番号
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.G1Base.DLGTAG.TAGCM">
+	<summary>
+ 付箋メモ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTAG.DLGTAG_Load(System.Object,System.EventArgs)">
+	<summary>
+ ロード時イベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTAG.FN_OK">
+	<summary>
+ OK
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTAG.FN_Cancel">
+	<summary>
+ キャンセル
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTAG.DLGTAG_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ KeyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTAG.BTN_OK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.DLGTAG.BTN_Cancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.G1Base.DLGTAG">
+	<summary>
+ 付箋ダイアログ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.UPDFlag.UpdateAndPrint">
+	<summary>計上し発行</summary>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.UPDFlag.UpdateOnly">
+	<summary>計上のみ</summary>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.UPDFlag.PrintOnly">
+	<summary>発行のみ</summary>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.UPDFlag.Cancel">
+	<summary>キャンセル</summary>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.UPDFlag.Preview">
+	<summary>プレビュー</summary>
+</member><member name="T:ILL.ERF.G1Base.DLGUPD.UPDFlag">
+	<summary>ダイアログの結果</summary>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.ButtonReturnValPair.Button">
+	<summary>ボタン</summary>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.ButtonReturnValPair.FKey">
+	<summary>対応するファンクションキー</summary>
+</member><member name="F:ILL.ERF.G1Base.DLGUPD.ButtonReturnValPair.ReturnValue">
+	<summary>戻り値</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.#ctor(ILL.ERF.G1Base.BasicForm)">
+	<summary>コンストラクタ</summary>
+	<param name="parent">メッセージを戻すためのステータスバー</param>
+</member><member name="P:ILL.ERF.G1Base.DLGUPD.Updatable">
+	<summary>登録可能</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGUPD.Printable">
+	<summary>発行可能</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGUPD.NewFlag">
+	<summary>新規伝票かどうか</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGUPD.Result">
+	<summary>ダイアログの結果</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGUPD.IsDENSBChanged">
+	<summary>伝票種別変更されているか</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.SetSelection">
+	<summary>選択状態のセット</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.MoveSelection(System.Int32)">
+	<summary>方向キーでの選択状態移動</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.DLGUPD_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>FormClosingイベント</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.Form_Load(System.Object,System.EventArgs)">
+	<summary>ロードイベント</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.Form_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>キーダウンイベント</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+	<summary>F10でコントロールボックスが開くのを回避</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGUPD.BTN_Click(System.Object,System.EventArgs)">
+	<summary>ボタンクリック</summary>
+</member><member name="T:ILL.ERF.G1Base.DLGUPD">
+	<summary>更新ダイアログ</summary>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.#ctor(ILL.ERF.BaseLib.CTLSTT,System.Windows.Forms.PictureBox,ILL.ERF.BaseLib.CTLTXT,ILL.ERF.BaseLib.CTLBTN,ILL.ERF.BaseLib.CTLBTN,System.Windows.Forms.Form,System.String)">
+	<summary>コンストラクタ</summary>
+	<param name="ReturnSTT">メッセージを戻すためのステータスバー</param>
+	<param name="PctBox">画像イメージ表示PictureBox</param>
+	<param name="PctName">画像ファイル名</param>
+	<param name="ShowBtn">画像表示に紐付けるButton</param>
+	<param name="ClrBtn">画像クリアに紐付けるButton</param>
+	<param name="Form">BasicForm</param>
+	<param name="ExeName">EXE名(TEMPフォルダのフォルダ名になる)</param>
+</member><member name="P:ILL.ERF.G1Base.PCTMGR.OrgBitmap">
+	<summary>
+ ピクチャーボックスに表示するために、加工する前のBitmapデータ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.ParentForm_Closed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ ParentFormクローズ後、ビューワ表示用に一時的に作ったディレクトリを削除
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.ShowPicture">
+	<summary>画像表示</summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.DelPicture">
+	<summary>画像クリア</summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.ShowViewer">
+	<summary>ビューワ表示</summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.SetClrBtnEnabled">
+	<summary>画像クリアボタンのEnabled制御</summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.GetImage(System.String,System.Drawing.Bitmap@,System.Drawing.Size,System.String@)">
+	<summary>
+ 画像データの取得
+ 縦横比を保存しつつ指定されたサイズに拡大/縮小を行う。
+ 拡大/縮小の前後で縦横比が異なる場合は余白を作成する。
+ </summary>
+	<param name="FileName">ファイル名</param>
+	<param name="DestSize">整形後の画像サイズ</param>
+	<param name="OrgBitmap">元のファイルから取得したBitmapデータ</param>
+	<param name="Err">失敗した場合のエラーメッセージ（戻り値）</param>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.ConvertImageToArray(System.Drawing.Bitmap)">
+	<summary>
+ 画像データをByte配列に変換する
+ </summary>
+	<param name="Image">対象の画像データ</param>
+</member><member name="M:ILL.ERF.G1Base.PCTMGR.ConvertArrayToImage(System.Byte[],System.Drawing.Bitmap@,System.Drawing.Size,System.String@)">
+	<summary>
+ 画像データが格納されているByte配列をBitmap型に変換
+ </summary>
+	<param name="Array">Byte配列</param>
+	<param name="OrgBitmap"></param>
+	<param name="DestSize"></param>
+	<param name="Err"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.G1Base.PCTMGR">
+	<summary>画像操作クラス</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_DATA">
+	<summary>DBへの接続管理オブジェクト</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_EVENT">
+	<summary>イベント管理オブジェクト</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_INI">
+	<summary>INI管理オブジェクト</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_USJ">
+	<summary>ユーザー情報ファイル管理オブジェクト</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_ITM">
+	<summary>項目名ファイル管理オブジェクト</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_HANTAG">
+	<summary>付箋区分マスタ管理オブジェクト(販売)</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_KOUTAG">
+	<summary>付箋区分マスタ管理オブジェクト(購買)</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_SYS">
+	<summary>EXE管理オブジェクト</summary>
+</member><member name="F:ILL.ERF.G1Base.BasicForm.G1_Servants">
+	<summary>Servant全員を保持しているCollection</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.INI">
+	<summary>INIオブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.Data">
+	<summary>DBへの接続オブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.USJ">
+	<summary>ユーザー情報ファイルのオブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.ITM">
+	<summary>項目名ファイルのオブジェクトです。</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.SYSParentForm">
+	<summary>SYSMGRで管理する親フォーム</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.InitialValue">
+	<summary>ジャンプ・参照時の初期値</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.SYS">
+	<summary>EXE管理オブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.EVT">
+	<summary>イベント管理オブジェクト</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.Result">
+	<summary>Dialogとして呼んだ時の結果</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.AsmName">
+	<summary>アセンブリ名</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.ClassName">
+	<summary>クラス名</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.FormCheck">
+	<summary>メニューマスタからのFORMCHK</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.Param1">
+	<summary>メニューマスタからの引数1</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.Param2">
+	<summary>メニューマスタからの引数2</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.Param3">
+	<summary>メニューマスタからの引数3</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.LabelBackColor">
+	<summary>項目ラベル背景色</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.LabelForeColor">
+	<summary>項目ラベル文字色</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.MenuType">
+	<summary>メニュータイプ</summary>
+</member><member name="P:ILL.ERF.G1Base.BasicForm.Closable">
+	<summary>フォームを閉じる事が可能かどうか</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.Form_Load(System.Object,System.EventArgs)">
+	<summary>起動処理</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.JustBegun">
+	<summary>
+ プログラムが起動して一番最初に処理されるメソッドです。
+ FN_Instanciateより前に処理を行いたい場合に使います。
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_Instanciate">
+	<summary>各MGRのインスタンス化を行います。</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckOnLoad">
+	<summary>起動時のチェック Falseを返したらそのまま終了します</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_InitCheckSecurity">
+	<summary>起動時のセキュリティチェック しない場合はオーバーライド</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ProhibitCoexistence">
+	<summary>起動時の同時実行制御 しない場合はオーバーライド 
+       or そもそもそんなプログラム同時実行制御マスタレコードを作らない
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_GlobalSetting">
+	<summary>
+ 広い範囲での実行環境設定
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterForm">
+	<summary>
+ Form全体で使用する変数などの設定を行います。
+ 具体的には、
+ システム設定ファイルの読込や
+ モジュール変数の初期化などです。
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetInitialValues">
+	<summary>
+ 引数をFormなどに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetFunction">
+	<summary>ファンクションキー設定</summary>
+	<remarks>ファンクションキーを変更する場合はオーバーライドする</remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetLayout">
+	<summary>
+ 区分によってレイアウトが異なる場合はこの中で設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_GetLabelColor">
+	<summary>項目ラベルの色を取得する</summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetLabelTexts">
+	<summary>ラベル表示の設定を行います。</summary>
+	<remarks>
+ 項目名ファイルなどから取得するときはオーバーライドして下さい。
+ </remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_AssignServant">
+	<summary>
+ Servantを各コントロールに割り当てる
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_InitializeScreen">
+	<summary>
+ 各入力項目に初期値を入れる
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_LoadData">
+	<summary>
+ ジャンプ時などの引当や呼出機能を行います。
+ BasicFormDenで使用します。
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetMoveEx">
+	<summary>
+ カーソル制御ファイルから情報を元にカーソル設定を行います。
+ BasicFormDenで使用します。
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetInitializeFocus">
+	<summary>
+ 初期フォーカスが通常と異なる場合はここで設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.JustReadyToGo">
+	<summary>
+ 全ての起動処理が終わった後に処理されるメソッドです。
+ FN_StepTopより後に処理を行いたい場合に使います。
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.IServant,ILL.ERF.BaseLib.CTLLBL,System.Windows.Forms.Control,System.Boolean,System.Boolean,ILL.ERF.BaseLib.BaseRoutine,System.Boolean,System.Boolean)">
+	<summary>
+ RegisterControlフルバージョン
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="svt">Servant(省略時はNothing)</param>
+	<param name="DispLabel">対応するラベル(省略不可)</param>
+	<param name="Parent">親コントロール(省略時はNothing)</param>
+	<param name="IsNextFocus">順方向フォーカスセット(省略時はTrue)</param>
+	<param name="IsPreviousFocus">逆方向フォーカスセット(省略時はTrue)</param>
+	<param name="Routine">ルーチン（一つだけ）(省略時はNothing)</param>
+	<param name="InputMode">チェック時再取得かどうか(省略時はTrue)</param>
+	<param name="EventChangeCommitted">登録するルーチンをテキスト変更確定時、実行するかどうか(省略時はTrue)</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.IServant,ILL.ERF.BaseLib.CTLLBL,System.Windows.Forms.Control,System.Boolean,System.Boolean,ILL.ERF.BaseLib.BaseRoutine,System.Boolean)">
+	<summary>
+ RegisterControl EventChangeCommitted省略版( = True)
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="svt">Servant(省略時はNothing)</param>
+	<param name="DispLabel">対応するラベル(省略不可)</param>
+	<param name="Parent">親コントロール(省略時はNothing)</param>
+	<param name="IsNextFocus">順方向フォーカスセット(省略時はTrue)</param>
+	<param name="IsPreviousFocus">逆方向フォーカスセット(省略時はTrue)</param>
+	<param name="Routine">ルーチン（一つだけ）(省略時はNothing)</param>
+	<param name="InputMode">チェック時再取得かどうか(省略時はTrue)</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.IServant,ILL.ERF.BaseLib.CTLLBL,System.Windows.Forms.Control,System.Boolean,System.Boolean,ILL.ERF.BaseLib.BaseRoutine)">
+	<summary>
+ RegisterControl InputMode省略版( = True)
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="svt">Servant</param>
+	<param name="DispLabel">対応するラベル</param>
+	<param name="Parent">親コントロール</param>
+	<param name="IsNextFocus">順方向フォーカスセット</param>
+	<param name="IsPreviousFocus">逆方向フォーカスセット</param>
+	<param name="Routine">ルーチン（一つだけ）</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.IServant,ILL.ERF.BaseLib.CTLLBL,System.Windows.Forms.Control,ILL.ERF.BaseLib.BaseRoutine)">
+	<summary>
+ RegisterControl InputMode( = True), フォーカスセット省略版
+ フォーカスセットは両方Trueで与えられる
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="svt">Servant</param>
+	<param name="DispLabel">対応するラベル</param>
+	<param name="Parent">親コントロール</param>
+	<param name="Routine">ルーチン（一つだけ）</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.IServant,ILL.ERF.BaseLib.CTLLBL,System.Windows.Forms.Control)">
+	<summary>
+ RegisterControl コントロール, Servant, Label, 親のみ版
+ フォーカスセットは両方Trueで与えられる
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="svt">Servant</param>
+	<param name="DispLabel">対応するラベル</param>
+	<param name="Parent">親コントロール</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.IServant,ILL.ERF.BaseLib.CTLLBL)">
+	<summary>
+ RegisterControl コントロールとServant, Labelのみ版
+ フォーカスセットは両方Trueで与えられる
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="svt">Servant</param>
+	<param name="DispLabel">対応するラベル</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.CTLLBL)">
+	<summary>
+ RegisterControl コントロールとLabelのみ版
+ フォーカスセットは両方Trueで与えられる
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="DispLabel">対応するラベル</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control)">
+	<summary>
+ RegisterControl コントロールのみ版
+ </summary>
+	<param name="obj">登録するコントロール</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterControl(System.Windows.Forms.Control,ILL.ERF.BaseLib.CTLLBL,System.Windows.Forms.Control,System.Boolean,ILL.ERF.BaseLib.BaseRoutine)">
+	<summary>
+ RegisterControl フォーカスセット、Servant省略版
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="DispLabel">対応するラベル</param>
+	<param name="Parent">親コントロール</param>
+	<param name="InputMode">チェック時再取得かどうか</param>
+	<param name="Routine">ルーチン（一つだけ）</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterContainer(System.Windows.Forms.Control,ILL.ERF.BaseLib.IServant,System.Windows.Forms.Control)">
+	<summary>
+ RegisterContainer Headerなどで使用するContainer登録用 
+ フォーカスセットは両方Falseで与えられる
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="svt">Servant</param>
+	<param name="Parent">親コントロール</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterContainer(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+	<summary>
+ RegisterContainer Headerなどで使用するContainer登録用 Servant省略版
+ フォーカスセットは両方Falseで与えられる
+ </summary>
+	<param name="obj">登録するコントロール</param>
+	<param name="Parent">親コントロール</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_RegisterContainer(System.Windows.Forms.Control)">
+	<summary>
+ RegisterContainer Headerなどで使用するContainer登録用 Servant省略版
+ フォーカスセットは両方Falseで与えられる
+ </summary>
+	<param name="obj">登録するコントロール</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ChangeServant(ILL.ERF.BaseLib.CTLTXT,ILL.ERF.BaseLib.ITextServant,System.Boolean,ILL.ERF.BaseLib.BaseRoutine)">
+	<summary>
+ サーバント切り替え
+ </summary>
+	<param name="obj">サーバントを切り替える対象CTLTXT</param>
+	<param name="svt">切りかえるサーバント</param>
+	<param name="InputMode">マスタ入力モードかどうか</param>
+	<param name="Routine">ルーチン(1つ)</param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ChangeServant(ILL.ERF.BaseLib.CTLTXT,ILL.ERF.BaseLib.ITextServant,System.Boolean)">
+	<summary>
+ サーバント切り替え(ルーチンなしバージョン)
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ChangeServant(ILL.ERF.BaseLib.CTLTXT,ILL.ERF.BaseLib.ITextServant)">
+	<summary>
+ サーバント切り替え(ルーチン、InputModeなし(=False)バージョン)
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ReorderControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+	<summary>
+ Assign後のカーソル飛び順変更
+ </summary>
+	<param name="obj">飛び順を変更するコントロール</param>
+	<param name="PrevControl">その前にしたいコントロール</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_Update">
+	<summary>F1キーから呼ばれる関数はここ</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_UpdateFunction(System.Boolean@)">
+	<summary>登録開始～チェック～確認ダイアログ～登録実行</summary>
+	<remarks>戻り値を必要とするためBoolean型とする</remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckUpdate">
+	<summary>登録前チェック</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ShowUpdateDialog">
+	<summary>登録確認ダイアログ</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_UpdateMain">
+	<summary>登録のメイン処理</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_UpdateAfter">
+	<summary>登録後の処理</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckInput(System.String@,System.Windows.Forms.Control@)">
+	<summary>入力チェック</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SendScreenToDataRowStandard(System.Data.DataRow)">
+	<summary>標準更新仕様</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SendScreenToDataRowStandard(System.Data.DataRow,System.Boolean)">
+	<summary>標準更新仕様(G1_NewFlag以外で判断する場合)</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_Delete">
+	<summary>削除開始～チェック～確認ダイアログ</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckDelete">
+	<summary>削除前チェック</summary>
+	<remarks>全チェックは行わないので実装はサブクラス以下で行う</remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ShowDeleteDialog">
+	<summary>削除確認ダイアログ</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_DeleteMain">
+	<summary>削除のメイン処理</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetDialogMessageDelete">
+	<summary>削除確認メッセージの設定</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetAfterDeleteMessage">
+	<summary>削除後メッセージの設定</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_Cancel">
+	<summary>キャンセル</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_Find">
+	<summary>検索メソッド本体</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ShowFindDialog">
+	<summary>検索切替ダイアログを表示するならここで</summary>
+	<remarks>主に送り状入力用</remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckFind(System.String@)">
+	<summary>呼び出し前チェック(書式設定)</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetProperties(ILL.ERF.BaseLib.CTLTXT)">
+	<summary>検索パラメータの設定</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_ContinueFind(System.Object)">
+	<summary>検索ウィンドウから戻り直後、その後の処理を続けるかどうか</summary>
+	<param name="Res">検索の戻り値</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetFindResult(ILL.ERF.BaseLib.IServant,System.Object)">
+	<summary>
+ 検索の戻り値をコントロールにセットする
+ </summary>
+	<param name="TargetServant">対象のコントロールをもつServant</param>
+	<param name="Result">検索からの戻り値</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_AfterFind">
+	<summary>検索ロジック終了時の処理</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_End">
+	<summary>終了処理</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_PrintForm">
+	<summary>画ｺﾋﾟｰ</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_PrinterDialog">
+	<summary>ﾌﾟﾘﾝﾀ選択</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckSecurity(ILL.ERF.BaseLib.SECMGR.SecurityType,System.Boolean)">
+	<summary>セキュリティチェックメイン</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckSecurityUpdate">
+	<summary>登録時用</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_CheckSecurityDelete">
+	<summary>削除時用</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_GetData">
+	<summary>データの取得</summary>
+	<remarks>継承用</remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_Extend">
+	<summary>拡張項目</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+	<summary>F10でコントロールボックスが開くのを回避</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.Form_Activated(System.Object,System.EventArgs)">
+	<summary>Activated</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.Form_Disposed(System.Object,System.EventArgs)">
+	<summary>終了処理</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.BeforeExec(System.Object,ILL.ERF.BaseLib.CTLFNC.CTLFNCEventArgs)">
+	<summary>ファンクションの実行時イベント</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_BeforeEnter(System.Object,ILL.ERF.BaseLib.MOVMGR.MOVMGREventArgs)">
+	<summary>カーソル項目BeforeEnter</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_BeforeLeave(System.Object,ILL.ERF.BaseLib.MOVMGR.MOVMGREventArgs)">
+	<summary>カーソル項目BeforeLeave</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_Enter(System.Object,System.EventArgs)">
+	<summary>カーソル項目Enter</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SetEnabledCtlfnc5(System.Object)">
+	<summary>ファンクションボタン5のEnabled制御</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_Leave(System.Object,System.EventArgs)">
+	<summary>カーソル項目Leave</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_MoveNext(System.Object,ILL.ERF.BaseLib.MOVMGR.MOVMGREventArgs)">
+	<summary>
+ カーソル項目MoveNext
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_MovePrevious(System.Object,ILL.ERF.BaseLib.MOVMGR.MOVMGREventArgs)">
+	<summary>
+ カーソル項目MovePrevious
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_MovingNext(System.Object,ILL.ERF.BaseLib.MOVMGR.MOVMGREventArgs)">
+	<summary>
+ カーソル項目MovingNext
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_MovingPrevious(System.Object,ILL.ERF.BaseLib.MOVMGR.MOVMGREventArgs)">
+	<summary>
+ カーソル項目MovingPrevious
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_ReachEnd(System.Object,System.EventArgs)">
+	<summary>
+ カーソル項目最終到達
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_ReachTop(System.Object,System.EventArgs)">
+	<summary>
+ カーソル項目先頭到達
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ カーソル項目TextChanged
+ </summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_DisplayError(System.Object,System.EventArgs,System.String)">
+	<summary>エラーを表示</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.G1_EVENT_DisplayMessage(System.Object,System.EventArgs)">
+	<summary>メッセージを表示</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.ShowChildDialog(ILL.ERF.G1Base.BasicForm,System.Boolean)">
+	<summary>子ダイアログの表示</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.SetValue(System.Object)">
+	<summary>フォームに値を渡す</summary>
+	<param name="Value">引き渡すデータオブジェクト</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.SetGridRow(System.Data.DataTable@,System.Int32@,System.String,System.Int32)">
+	<summary>Gridへの行登録用syntactic sugar</summary>
+	<param name="L_DataTable">登録するDataTable</param>
+	<param name="ColumnOrder">列順</param>
+	<param name="ColumnName">列名</param>
+	<param name="ColumnWidth">列幅</param>
+	<remarks>Grid表示用です</remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_BasePosition">
+	<summary>先頭項目にフォーカス</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_StepHome">
+	<summary>Homeキーでどこに行くか</summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_StepBackToTop">
+	<summary>最終項目から帰ってきた時</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_StepAfterUpdate">
+	<summary>登録後のフォーカス</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_StepAfterDelete">
+	<summary>削除後のフォーカス</summary>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SendDbToCtl(System.Windows.Forms.Control,System.Data.DataRow,System.String)">
+	<summary>
+ データベースから画面用項目にデータを転送します。
+ </summary>
+	<param name="Control">転送先のコントロール</param>
+	<param name="Row">このDataRowのデータが送られる</param>
+	<param name="DbColName">データベースの列名</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SendDbToRow(System.Data.DataRow,System.Data.DataRow,System.String,System.String)">
+	<summary>
+ データベースから画面用テーブルにデータを転送します。
+ </summary>
+	<param name="Row">このDataRowにデータが送られる</param>
+	<param name="DbRow">このDataRowのデータが送られる</param>
+	<param name="TblColName">画面用テーブル側の項目名</param>
+	<param name="DBColName">データベースの列名</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SendDbToRow(System.Data.DataRow,System.Data.DataRow,System.String,System.String,ILL.ERF.BaseLib.CTLTXT)">
+	<summary>
+ データベースから画面用テーブルにデータを転送します。
+ 数値項目用です。
+ </summary>
+	<param name="Row">このDataRowにデータが送られる</param>
+	<param name="DbRow">このDataRowのデータが送られる</param>
+	<param name="TblColName">画面用テーブル側の項目名</param>
+	<param name="DBColName">データベースの列名</param>
+	<param name="FormatControl">フォーマット情報を持つCTLTXT</param>
+</member><member name="M:ILL.ERF.G1Base.BasicForm.FN_SendDbToRow(System.Data.DataRow,System.Data.DataRow,System.String)">
+	<summary>
+ データベースから画面用テーブルにデータを転送します。
+ 両方の列名（項目名）が全く同じ場合に使用します。
+ </summary>
+	<param name="Row">このDataRowにデータが送られる</param>
+	<param name="DbRow">このDataRowのデータが送られる</param>
+	<param name="ColName">列名（項目名）</param>
+</member><member name="T:ILL.ERF.G1Base.BasicForm">
+	<summary>画面の基底クラス</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGPRN.SelectedPrinterName">
+	<summary>現在選択されているプリンタの名前</summary>
+</member><member name="P:ILL.ERF.G1Base.DLGPRN.SelectedPrinter">
+	<summary>現在選択されているプリンタの情報</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.DLGPRN_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>FormClosingイベント</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.DLGPRN_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>KeyDownイベント</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.PrinterDialog_Load(System.Object,System.EventArgs)">
+	<summary>ロード時イベント</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.GetPrivateNames">
+	<summary>プリンタ名取得</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.GetPortName(System.String)">
+	<summary>ポート名の取得</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.OK_Button_Click(System.Object,System.EventArgs)">
+	<summary>OKをクリック</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.Cancel_Button_Click(System.Object,System.EventArgs)">
+	<summary>キャンセルをクリック</summary>
+</member><member name="M:ILL.ERF.G1Base.DLGPRN.CMB_PrinterNames_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>コンボボックスでの選択変更時の処理</summary>
+</member><member name="T:ILL.ERF.G1Base.DLGPRN">
+	<summary>ﾌﾟﾘﾝﾀ選択ダイアログ</summary>
+</member>
+</members>
+</doc>

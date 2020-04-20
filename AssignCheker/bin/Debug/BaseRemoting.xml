@@ -1,0 +1,399 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BaseRemoting
+</name>
+</assembly>
+<members>
+<member name="M:ILL.ERF.BaseRemoting.SPNSOR.Renewal(System.Runtime.Remoting.Lifetime.ILease)">
+	<summary>
+ リース期間延長
+ </summary>
+	<param name="lease"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.BaseRemoting.SPNSOR.INI">
+	<summary>
+ INI情報を格納しているListDictionary
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.BaseRemoting.SPNSOR.Clients">
+	<summary>
+ クライアント情報のコレクション
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.BaseRemoting.SPNSOR.TransactionTimeout">
+	<summary>
+ トランザクションタイムアウト
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.BaseRemoting.SPNSOR">
+	<summary>
+ スポンサークラス
+ リモートオブジェクトのリース期間切れの管理
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.BaseRemoting.DT3MGR.Connection">
+	<summary>
+ コネクション
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.BaseRemoting.DT3MGR.ConnectionString">
+	<summary>サーバへのConnection文字列</summary>
+</member><member name="P:ILL.ERF.BaseRemoting.DT3MGR.DataSet">
+	<summary>
+ データセット
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.BaseRemoting.DT3MGR.Transaction">
+	<summary>
+ トランザクション
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.BeginTransaction">
+	<summary>
+ トランザクション開始
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.CommitTransaction">
+	<summary>
+ トランザクションコミット
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.RollBackTransaction">
+	<summary>
+ トランザクションロールバック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.ExecCommand(System.String)">
+	<summary>
+ クエリの実行
+ </summary>
+	<param name="SQL">クエリ</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.ExecStoredProcedure(System.String,System.Collections.ObjectModel.Collection{System.Data.SqlClient.SqlParameter})">
+	<summary>
+ ストアドプロシージャの実行
+ </summary>
+	<param name="Name">ストアド名</param>
+	<param name="Params">パラメータのコレクション</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.GetErrorMessage">
+	<summary>
+ 最後に起こったエラーメッセージの取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.GetErrorIndex">
+	<summary>
+ 最後に起こったSQLExceptionの番号を取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.GetTable(System.String,System.String)">
+	<summary>
+ DataTableの取得
+ </summary>
+	<param name="TableName">一時テーブル名</param>
+	<param name="SQL">クエリ</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.UpdateTable(System.String,System.Data.DataTable)">
+	<summary>
+ Tableの更新
+ </summary>
+	<param name="SQL">クエリ（取得した時と同じクエリを渡す必要有り）</param>
+	<param name="Table">テーブル</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.Register(System.String,System.Collections.Specialized.ListDictionary)">
+	<summary>
+ 初期化
+ </summary>
+	<param name="ini">INIオブジェクト</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.Dispose">
+	<summary>
+ オブジェクトの破棄
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.SetConnection">
+	<summary>
+ コネクションセット
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.GetCurrentTime">
+	<summary>
+ 保持しているサーバー時刻を取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DT3MGR.SetCurrentTime">
+	<summary>
+ サーバーの時刻を取得し、クラスで保持
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.INIData">
+	<summary>
+ INI情報を格納したListDictionary
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.ProgramName">
+	<summary>
+ プログラム名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.DataSet">
+	<summary>
+ データ格納庫
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.SqlConnection">
+	<summary>
+ コネクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.SqlTransaction">
+	<summary>
+ トランザクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.BeginTranTime">
+	<summary>
+ トランザクションの開始時刻
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.SPOutParameters">
+	<summary>
+ SPのパラメータを格納するコレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.ErrorMessage">
+	<summary>
+ 最後に起こったエラーのメッセージ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.ErrorIndex">
+	<summary>
+ 最後に起こったSQLExceptionの番号
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.CurrentTime">
+	<summary>
+ 現在時刻
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.SqlConnectionString">
+	<summary>
+ コネクション文字列
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.#ctor(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ 初期化
+ </summary>
+	<param name="ini"></param>
+	<param name="PGName"></param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.ClientInfo.Dispose">
+	<summary>
+ 破棄
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.BaseRemoting.DATRLY.ClientInfo">
+	<summary>
+ クライアント情報
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ILL.ERF.BaseRemoting.DATRLY.Clients">
+	<summary>
+ クライアント情報のコレクション
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetConnection(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ コネクションの取得
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetConnectionString(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ コネクションの取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetDataSet(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ データセット
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetTransaction(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ トランザクションの取得
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.SetConnection(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ コネクションのセット
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.Dispose(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ 破棄
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.ExecCommand(System.Collections.Specialized.ListDictionary,System.String,System.String)">
+	<summary>
+ クエリの実行
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<param name="SQL">クエリ</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.ExecStoredProcedure(System.Collections.Specialized.ListDictionary,System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList@,System.Collections.ArrayList)">
+	<summary>
+ ストアドプロシージャの実行
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<param name="Name">プロシージャ名</param>
+	<param name="ParamNames">パラメータ名コレクション</param>
+	<param name="ParamValues">パラメータ値コレクション</param>
+	<param name="ParamDirections">パラメータ方向コレクション</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetTable(System.Collections.Specialized.ListDictionary,System.String,System.String,System.String)">
+	<summary>
+ DataTableの取得
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<param name="TableName">一時テーブル名</param>
+	<param name="SQL">クエリ</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.UpdateTable(System.Collections.Specialized.ListDictionary,System.String,System.String,System.Data.DataTable)">
+	<summary>
+ Tableの更新
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<param name="SQL">クエリ（取得した時と同じクエリを渡す必要有り）</param>
+	<param name="Table">テーブル</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.BeginTransaction(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ トランザクション開始
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.CommitTransaction(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ トランザクションコミット
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.RollBackTransaction(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ トランザクションロールバック
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetErrorMessage(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ 最後に起こったエラーメッセージの取得
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetErrorIndex(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ 最後に起こったSQLExceptionの番号を取得
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetCurrentTime(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ 保持しているサーバー時刻を取得
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.SetCurrentTime(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ サーバーの時刻を取得し、クラスで保持
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.GetSPOutParameters(System.Collections.Specialized.ListDictionary,System.String)">
+	<summary>
+ SPパラメータの取得
+ </summary>
+	<param name="ini">INI情報</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ILL.ERF.BaseRemoting.DATRLY.FindClientInfo(System.String,System.String)">
+	<summary>
+ クライアント情報の検索
+ </summary>
+	<param name="LoginName">LoginID</param>
+	<param name="ProgramName">プログラム名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ILL.ERF.BaseRemoting.DATRLY">
+	<summary>
+ IIS上のリモートオブジェクト
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
