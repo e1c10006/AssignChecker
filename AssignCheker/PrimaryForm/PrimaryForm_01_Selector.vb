@@ -233,7 +233,7 @@ Partial Class PrimaryForm
                 queryString &= "	,'1' "
                 queryString &= "	,'1' "
                 queryString &= "	,'9999' "
-                queryString &= "	,'9999' FROM メニューマスタ a LEFT OUTER JOIN セキュリティマスタ b ON a.FORMCHK = b.FORMCHK WHERE b.FORMCHK IS NULL AND a.可視区分 = '1' AND a.EXE名 NOT LIKE 'MENU%'"
+                queryString &= "	,'9999' FROM メニューマスタ a LEFT OUTER JOIN セキュリティマスタ b ON a.FORMCHK = b.FORMCHK WHERE b.FORMCHK IS NULL AND a.EXE名 NOT LIKE 'MENU%'"
                 queryString &= "	)"
                 Dim command As SqlCommand = New SqlCommand(queryString, cn)
                 Dim ret As Integer = command.ExecuteNonQuery()
