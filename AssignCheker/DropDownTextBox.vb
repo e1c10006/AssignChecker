@@ -5,8 +5,6 @@
     Private ExSetting As String()
 
     Public Sub New()
-        'InitializeComponent()
-
         Dim ToolStripControlHost1 As New ToolStripControlHost(ListBox1)
         ToolStripControlHost1.AutoSize = False
         ToolStripControlHost1.Margin = New Padding(0)
